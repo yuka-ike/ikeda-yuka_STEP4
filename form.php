@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
     <head>
-        <mete charset="UTF-8">
+        <meta charset="UTF-8">
             <title>フォーム入力</title>
             <link rel="stylesheet" href= "style.css">
 </head>

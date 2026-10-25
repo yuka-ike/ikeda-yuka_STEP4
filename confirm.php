@@ -13,7 +13,7 @@
        $username = $_POST["username"];
        $age = $_POST["age"];
        $phone = $_POST["phone"];
-       $mail = $_POST["email"];
+       $email = $_POST["email"];
        $address = $_POST["address"];
        $question = $_POST["question"];
        $gender = $_POST["gender"];
@@ -26,7 +26,7 @@
         echo "<p>年齢は0から150の間で入力してください。</p>";
     }elseif(!preg_match("/^[0-9\-\s]+$/u",$phone)){
         echo "<p>電話番号は半角数字とハイフンのみ使用できます。</p>";
-    }elseif(!filter_var($email , filter_validate_email)){
+    }elseif(!filter_var($email , FILTER_VALIDATE_EMAIL)){
         echo "<p>メールアドレスの形式が正しくありません。</p>";
     }elseif(!preg_match("/^[ぁ-んァ-ヶ一-龠a-zA-Z0-9\-\s]+$/u",$address)){
         echo "<p>住所は日本語、英字、半角数字、ハイフンのみ使用できます。</p>";
